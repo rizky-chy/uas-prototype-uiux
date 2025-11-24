@@ -1,0 +1,11 @@
+.img-profile{
+    height: 32px;
+    width: 32px;
+    background-size: contain;
+    border-radius: 50px;
+    background-image: url(https://picsum.dev/image/1184/100); 
+}
+
+.vid-thumbnail{
+    background-image: url(https://picsum.dev/300/200);
+}
