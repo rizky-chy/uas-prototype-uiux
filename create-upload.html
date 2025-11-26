@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create Upload</title>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
@@ -37,13 +37,41 @@
     <hr class="border-gray-500">
 
     <main class="flex justify-center">
-        <div class="border border-gray-500 rounded-xl w-[500px] h-[600px] mt-2 flex justify-center">
-            <div class="bg-white w-[450px] mt-4 flex">
-                <div>
-                <p>New Video</p>
+        <div class="border border-gray-500 rounded-xl w-[500px] h-[600px] mt-2 flex flex-col justify-start items-center text-white">
+            <div class="bg-black w-[450px] h-[150px] mt-4 flex justify-center rounded-xl">
+                <div class="h-[100px] flex flex-col justify-center pl-12 text-white">
+                <p class="text-2xl font-bold">New Video</p>
                 <p>Some information before uploading</p>
                 </div>
-                <img class="w-[100px]" src="./img/youyesyou-icon.png" alt="youyesyou-logo">
+                <img class="w-[200px] h-[100px] md:object-cover" src="./img/youyesyou-icon.png" alt="youyesyou-logo">
+            </div>
+
+            <div class="w-115 p-4">
+                <div class="w-full h-4 bg-gray-400 rounded-full">
+                    <div class="w-3/4 h-full text-center text-xs text-white bg-lime-900 rounded-full">
+                        75%
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-[450px] flex flex-col">
+            <p class="mt-4 mb-2 text-xl">Video Title</p>
+            <input class="md:w-full border-b" type="text" placeholder="Type here...">
+            <input class="md:w-full text-red-500" type="text" placeholder="Type an error message">
+
+            <p class="mt-4 mb-2 text-xl">Video Description</p>
+            <textarea class="md:w-full border rounded p-2" name="" id="" placeholder="Type here..."></textarea>
+            <input class="md:w-full text-red-500" type="text" placeholder="Type an error message">
+
+            <p class="mt-4 mb-2 text-xl">Video Keywords</p>
+            <div>
+                <button class="text-white border px-3 rounded-4xl bg-gray-500">Item 1</button>
+                <button class="text-white border px-3 rounded-4xl bg-gray-500">Item 2</button>
+                <button class="text-white border px-3 rounded-4xl bg-gray-500">Item 3</button>
+                <button class="text-white border px-3 rounded-4xl bg-gray-500">Item 4</button>
+                <button class="text-white border px-3 rounded-4xl bg-gray-500">+</button>
+            </div>
+            <input class="md:w-full border-b" type="text" placeholder="New keyword...">
             </div>
         </div>
     </main>
